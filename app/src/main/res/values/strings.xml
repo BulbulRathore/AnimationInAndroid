@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AnimationInAndroid</string>
-    <string name="hiii_world">Hiii World!</string>
+    <string name="hi_world">Hiii World!</string>
+    <string name="professional_android_development">Professional Android Development</string>
 </resources>

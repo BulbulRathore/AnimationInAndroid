@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txthelloworld;
     private TextView txthelloworld1;
     private boolean isHelloworldShowing;
+    private TextView txtAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         txthelloworld = findViewById(R.id.txthelloworld);
         txthelloworld1 = findViewById(R.id.txthelloworld1);
+        txtAndroid = findViewById(R.id.txtAndroid);
         txthelloworld.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
                     txthelloworld.animate().alpha(1f).setDuration(3000);
                     isHelloworldShowing = false;
                 }
+            }
+        });
+
+        txtAndroid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                txtAndroid.animate().translationX(-3000).setDuration(2000);
+                //txtAndroid.animate().translationY(-3000).setDuration(2000);
+                txtAndroid.animate().translationXBy(300).setDuration(2000);
             }
         });
     }
