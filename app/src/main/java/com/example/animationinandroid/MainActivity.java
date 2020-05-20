@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"Hello World",Toast.LENGTH_LONG).show();
                 Log.i("Tag","hello world");
-                txthelloworld.animate().scaleX(100f).setDuration(1000);
+                txthelloworld.animate().alpha(0.5f).setDuration(1000);
             }
         });
     }
